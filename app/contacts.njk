@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/contacts.min.css">
+</head>
+<body>
+    
+    {% include 'app/modules/_header/_header.html' %}
+
+    <main class="main">
+
+        {% include 'app/modules/_top/_top.html' %}
+
+        <section class="map">
+            <div class="container">
+                <div id="map"></div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <div class="contact__info">
+                        <h3 class="contact__info-title">Feel Free Don’t
+                            Hesitate To
+                            Contact With Us
+                        </h3>
+                        <p class="contact__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan lacus vel facilisis. 
+                        </p>
+                        <ul class="contact__info-list">
+                            <li class="contact__info-item">
+                                <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
+                                <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
+                            </li>
+                            <li class="contact__info-item contact__info-item--location">
+                                Ranlon Market 789 Road, <br>
+                                Market Street, Newyork
+                            </li>
+                            <li class="contact__info-item contact__info-item--email">
+                                <div>yourmailaddress@gmail.com</div>
+                                <div>companymail@gmail.com</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="contact__form" action="#">
+                        <p class="contact__form-title">Contact Form</p>
+                        <div class="contact__form-box">
+                            <input class="contact__form-input" type="text" placeholder="Your name">
+                            <input class="contact__form-input" type="text" placeholder="Your E-mail Address">
+                        </div>
+                        <input class="contact__form-input" type="text" placeholder="Subject">
+                        <textarea class="contact__form-textarea" placeholder="Message here"></textarea>
+                        <button class="contact__form-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    {% include 'app/modules/_footer/_footer.html' %}
+    
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+        <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script> -->
+        <script src="js/main.min.js"></script>
+</body>
+</html>
